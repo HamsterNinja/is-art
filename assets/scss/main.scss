@@ -249,7 +249,125 @@ a.industry-row-item p:after {
     width: 50%;
     padding-right: 80px;
 }
+.form-and-advantages {
+    background-image: url(../images/web-agency.png);
+    background-repeat: no-repeat;
+    background-position: 50% 43%;
+    padding-bottom: 85px;
+}
+.main-page-form {
+    max-width: 1180px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 1px;
+    background-image: background-image;
+    background: url(../images/form-bg.png) no-repeat 0 100%,-webkit-linear-gradient(90deg, #64d485 0%, #95e282 99%);
+    background-image: url(../images/form-bg.png) no-repeat 0 100%,-ms-linear-gradient(90deg, #64d485 0%, #95e282 99%);
+    box-shadow: 0px 5px 65px 0px rgba(55,210,36,0.75);
+    position: relative;
+    padding: 33px 75px 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: -135px;
+    margin-bottom: 95px;
+}
+.main-page-form img {
+    position: absolute;
+    bottom: 0;
+    left: 135px;
+}
+.main-page-form-inner {
+    max-width: 600px;
+    width: 100%;
+}
+.main-page-form-name {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.056;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.main-page-form-text {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.main-page-form-inner form {
+    max-width: 590px;
+    width: 100%;
+    position: relative;
+}
+.main-page-form-inner form input.managInput {
+    background-color: #5fc36e;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    width: calc(100% - 35px);
+    background-image: url(../images/input-phone.png);
+    background-repeat: no-repeat;
+    background-position: 12px 50%;
+    border: 1px solid #5ab565;
+    padding: 14px 200px 14px 65px;
+}
+.main-page-form-inner form input.managSubmit {
+    width: 200px;
+    text-align: center;
+    background-color: #e53939;
+    background-image: url(../images/submit-form.png);
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 35% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 88% 100%, 0% 100%);
+    border: aliceblue;
+    padding: 15px 0 15px 8px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+.advantages-content {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,290px));
+    justify-content: center;
+    grid-gap: 40px 65px;
+}
+.advantages-item-num {
+    font-size: 98px;
+    color: #6ccc58;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 0px 25px 8px rgba(0,0,0,0.2);
+    background: url(../images/olive-l.png), url(../images/olive-r.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%, 100% 50%;
+}
+.advantages-item-text {
+    font-size: 19.23px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 1.2;
+}
+span.red_text {
+    color: #d71f1f;
+}
 
+span.blue_text {
+    color: #1073d8;
+}
+
+.our-works_block {
+    background-color: #000;
+    padding: 35px 0 45px;
+}
 @import 'pages/home';
 @import 'components/buttons';
 @import 'components/animations';

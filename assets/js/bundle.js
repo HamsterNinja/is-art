@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "bd826e660ed76ae0ed1f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c81bd8e4958c354f8ab5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -934,6 +934,15 @@ var csAnimate = {
 csAnimate.init();
 
 var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
+});
+
+var swiperworks = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 20,
     navigation: {
