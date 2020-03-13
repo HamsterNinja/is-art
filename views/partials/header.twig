@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header class="main-header">
+     	<div class="main-header-top">
+     		<div class="container">
+     			<div class="main-header-top-left">
+     				<div class="main-header-logo">
+     					<a href="">
+     						<i class="logo-image">
+     							<img src="./assets/images/logo.svg" alt="">
+     						</i>
+     						<h3 class="logo-text">Веб студия - ИС АРТ разработка и продвиджение сайтов</h3>
+     					</a>
+     				</div>
+     				<div class="main-header-kp-link"><a href="">Коммерческое предложение</a></div>
+     			</div>
+     			<div class="main-header-top-right">
+     				<div class="main-header-top-item">
+     					<a class="main-header-phone" href="88002015527">8 (800) 201-55-27</a>
+     					<a href="" class="main-header-callback">Обратный звонок</a>
+     				</div>
+     				<div class="main-header-top-item">
+     					<a class="main-header-phone" href="tel:+79687566665">+7 (968) 756-66-65</a>
+     					<a href="mailto:studio@is-art.ru" class="main-header-email">E-mail: studio@is-art.ru</a>
+     				</div>
+     			</div>
+     		</div>
+     	</div>
+     	<div class="main-header-bottom">
+     		<div class="container">
+     			<div class="main-header-bottom-menu">
+     				<ul>
+     					<li><a href="">Услуги и цены</a></li>
+     					<li><a href="">Акции</a></li>
+     					<li><a href="">О компании</a></li>
+     					<li><a href="">Кейсы</a></li>
+     					<li><a href="">Отзывы клиентов</a></li>
+     					<li><a href="">Блог</a></li>
+     					<li><a href="">Контакты</a></li>
+     				</ul>
+     			</div>
+     			<div class="main-header-bottom-info">
+     				<a class="main-header-bottom-link" href="">Обратная связь</a>
+     				<a class="main-header-bottom-link" href="">Бриф</a>
+     			</div>
+     			<div class="main-header-sub-menu">
+     				<div class="main-header-sub-menu-grid">
+     				{% for item in 0..7 %}
+     				<div class="sub-menu-item">
+     					<div class="sub-menu-item-name">Создание сайтов</div>
+     					<ul>
+     						<li><a href="">Лендинг пейдж</a></li>
+     						<li><a href="">Сайт визитка</a></li>
+     						<li><a href="">Корпоративный сайт</a></li>
+     						<li><a href="">Интернет магазин</a></li>
+     						<li><a href="">Сайт под ключ</a></li>
+     						<li><a href="">Дешевый сайт</a></li>
+     					</ul>
+     				</div>
+					{% endfor %}
+					</div>
+					<a href="" class="sub-menu-open-all">Открыть все услуги</a>
+     			</div>
+     		</div>
+     	</div>
+    </header>

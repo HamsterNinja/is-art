@@ -1,0 +1,76 @@
+<footer class="main-footer">
+	<div class="container">
+		<div class="main-footer-top">
+			<div class="footer-logo">
+     			<a href="">
+     				<i class="logo-image">
+     					<img src="./assets/images/logo.svg" alt="">
+     				</i>
+     				<h3 class="logo-text">Веб студия - ИС АРТ разработка и продвиджение сайтов</h3>
+     			</a>
+     		</div>
+     		<div class="footer-email"><a href="mailto:studio@is-art.ru">studio@is-art.ru</a></div>
+     		<div class="footer-phone"><a href="tel:+7 (800) 201-55-27">+7 (800) 201-55-27</a></div>
+     		<div class="footer-phone"><a href="tel:+7 (968) 756-66-65">+7 (968) 756-66-65</a></div>
+		</div>
+		<div class="main-footer-content">
+			<div class="footer-content-left">
+				<div class="footer-main-menu">
+					<ul>
+						<li><a href="">Услуги и цены</a></li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">О компании</a></li>
+						<li><a href="">Кейсы</a></li>
+						<li><a href="">Отзывы клиентов</a></li>
+						<li><a href="">Блог</a></li>
+						<li><a href="">Вакансии</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-socials">
+					<a href="" class="social"><img src="./assets/images/instagram.png" alt=""></a>
+					<a href="" class="social"><img src="./assets/images/vk.png" alt=""></a>
+				</div>
+				<div class="copyright">© IS ART 2013 - 2019</div>
+				<div class="footer-left-links">
+					<a href="">Политика конфиденциальности</a>
+					<a href="">Карта сайта</a>	
+				</div>
+			</div>
+			<div class="footer-content-menu">
+				{% for item in 0..2 %}
+					<div class="footer-content-menu-column">
+						<ul>
+							<li><a href="">Лендинг пейдж</a></li>
+							<li><a href="">Сайт визитка</a></li>
+							<li><a href="">Корпоративный сайт</a></li>
+							<li><a href="">Интернет магазин</a></li>
+							<li><a href="">Сайт под ключ</a></li>
+							<li><a href="">Дешевый сайт</a></li>
+						</ul>
+					</div>
+				{% endfor %}		
+			</div>
+		</div>
+		<div class="under-footer">
+			<div class="under-footer-link"><a href="">Служба поддержки</a></div>
+			<div class="official-partners">
+				<p>Официальные партнёры:</p>
+				<a href=""><img src="./assets/images/logo-timeweb.png" alt=""></a>
+				<a href=""><img src="./assets/images/1cbitrix.png" alt=""></a> 
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<script src="./assets/js/vendors/jquery-3.2.0.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="./assets/js/bundle.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
