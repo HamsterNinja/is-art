@@ -1,6 +1,15 @@
-.main-header{}
-.main-header-top{}
-.main-header-top .container {
+header.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.main-header-top{
+    padding: 20px 0 25px;
+    border-bottom: 1px solid #fff;
+}
+.main-header-top .container-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
     width: 56%;
+    padding-right: 80px;
 }
 .main-header-logo {
     width: 310px;
@@ -20,28 +30,58 @@
     justify-content: space-between;
     align-items: center;
 }
-.main-header-logo a{
-	text-decoration: none;
+.main-header-logo a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 .logo-image{
 	width: 140px;
 	display: inline-block;
 }
+i.logo-image img {
+    filter: brightness(0) invert(1);
+}
 h3.logo-text {
     font-size: 12px;
     color: #fff;
     font-weight: 500;
+    width: 144px;
+    line-height: 1.167;
 }
 .main-header-kp-link{}
 .main-header-kp-link a {
+    display: inline-block;
     font-size: 14px;
+    line-height: 1.2;
     color: #fff;
     text-decoration: none;
+    width: 125px;
+    background-image: url(../images/brif.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 0px 0 0 45px;
 }
 .main-header-top-right {
     width: 44%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 45px;
+    border-left: 1px solid #c4c4c4;
 }
-.main-header-top-item{}
+.main-header-top-item {
+    width: 225px;
+    background-image: url(../images/phone.png);
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    padding-left: 33px;
+}
+.main-header-top-item a{
+    display: inline-block;
+}
 a.main-header-phone {
 	font-size: 20px;
 	font-weight: 700;
@@ -60,15 +100,21 @@ a.main-header-email {
     color: #fff;
     text-decoration: none;
 }
-.main-header-bottom{}
-.main-header-bottom .container{
+.main-header-bottom{
+    padding: 20px 0;
+}
+.main-header-bottom .container-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+    align-items: center;
 }
 .main-header-bottom-menu{}
-.main-header-bottom-menu ul{}
+.main-header-bottom-menu ul{
+    padding: 0;
+    margin: 0;
+}
 .main-header-bottom-menu ul li{
 	display: inline-block;
 	vertical-align: middle;
@@ -78,6 +124,7 @@ a.main-header-email {
     font-size: 16px;
     color: #fff;
     font-weight: 500;
+    text-decoration: none;
 }
 .main-header-bottom-info{}
 .main-header-bottom-link{
@@ -86,15 +133,28 @@ a.main-header-email {
 	color: #fff;
     display: inline-block;
     vertical-align: middle;
+    text-decoration: none;
 }
 .main-header-sub-menu {
-    display: block;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    height: 432px;
     background-color: #fff;
+    padding: 25px 28px;
+}
+.main-header-sub-menu:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    left: 65px;
+    transform: rotate(45deg);
+    z-index: -1;
 }
 .main-header-sub-menu-grid{
     margin-bottom: 20px;
