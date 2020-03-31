@@ -1,0 +1,122 @@
+.main-footer{
+	background-color: #000;
+}
+.main-footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #6f6f6f;
+    padding: 30px 0;
+}
+.footer-logo a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-logo .logo-image{
+	margin-right: 15px;
+}
+.footer-email a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+.footer-phone:nth-child(3) a {
+    padding-left: 30px;
+    background-image: url(../images/phone.png);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+.footer-phone a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+.main-footer-content {
+    display: grid;
+    grid-template-columns: 175px calc(100% - 255px);
+    grid-gap: 25px;
+    padding: 30px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #6f6f6f;
+}
+.footer-main-menu {
+    margin-bottom: 30px;
+}
+.footer-main-menu ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.footer-main-menu ul li{
+	margin-bottom: 10px;
+}
+.footer-main-menu ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-socials {
+    margin-bottom: 20px;
+}
+.footer-socials img {
+    filter: brightness(0) invert(1);
+}
+.copyright,
+.footer-left-links a {
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.714;
+}
+.footer-content-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(175px,1fr));
+    justify-content: space-between;
+}
+.footer-content-menu-column ul {
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+.footer-content-menu-column ul li{
+	margin-bottom: 10px;
+}
+.footer-content-menu-column ul li a{
+	font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.under-footer{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.under-footer-link a{
+	font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 500;
+    text-decoration: none;
+}
+.official-partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.official-partners p {
+    margin: 0;
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 500;
+}
+.official-partners a{
+	display: inline-block;
+	margin-left: 50px;
+}
