@@ -20,7 +20,7 @@ header.main-header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 56%;
+    width: calc(100% - 525px);
     padding-right: 80px;
 }
 .main-header-logo {
@@ -36,6 +36,7 @@ header.main-header {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 .logo-image{
 	width: 140px;
@@ -65,7 +66,7 @@ h3.logo-text {
     padding: 0px 0 0 45px;
 }
 .main-header-top-right {
-    width: 44%;
+    width: 525px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -127,13 +128,17 @@ a.main-header-email {
     text-decoration: none;
 }
 .main-header-bottom-info{}
-.main-header-bottom-link{
-	font-size: 16px;
-	font-weight: 500;
-	color: #fff;
+.main-header-bottom-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
+    margin-left: 25px;
+}
+.main-header-bottom-link:first-child{
+    margin-left: 0; 
 }
 .main-header-sub-menu {
     display: none;

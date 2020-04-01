@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "97d49becdbb55587768c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9cad1d6a59590624d027"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -953,21 +953,49 @@ var swiperworks = new Swiper('.swiper-container.our-works-swiper', {
     }
 });
 var swiperteam = new Swiper('.swiper-container.our-team-swiper', {
-    slidesPerView: 5,
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 50,
     navigation: {
         nextEl: '.our-team-swiper .swiper-button-next',
         prevEl: '.our-team-swiper .swiper-button-prev'
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 35
+        },
+        680: {
+            slidesPerView: 3,
+            spaceBetween: 35
+        },
+        920: {
+            slidesPerView: 4,
+            spaceBetween: 35
+        },
+        1023: {
+            slidesPerView: 5,
+            spaceBetween: 35
+        }
     }
 });
 var swiperserts = new Swiper('.swiper-container.sertificates-swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 35,
     navigation: {
         nextEl: '.sertificates-swiper .swiper-button-next',
         prevEl: '.sertificates-swiper .swiper-button-prev'
+    },
+    breakpoints: {
+        680: {
+            slidesPerView: 2,
+            spaceBetween: 35
+        },
+        1023: {
+            slidesPerView: 3,
+            spaceBetween: 35
+        }
     }
 });
 
