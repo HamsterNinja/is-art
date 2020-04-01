@@ -111,7 +111,7 @@ for (let item of textWrapper) {
     item.innerHTML = item.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 }
 
-anime.timeline({loop: true})
+const animationLetter = anime.timeline({loop: true})
   .add({
     targets: '.fake_yasearch .letter',
     scale: [4,1],
@@ -129,26 +129,28 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
+
 $(document).ready(function() {
-$('.choose-button').click(function (event) {
-     event.preventDefault();
-     $('.choose-button').removeClass('active');
-     $(this).addClass('active');
+    $('.choose-button').click(function (event) {
+        event.preventDefault();
+        $('.choose-button').removeClass('active');
+        $(this).addClass('active');
 
-     var id = $(this).attr('data-id');
-     if (id) {
-         
-         $('.order-site-content-inner:visible').removeClass('visible');
-         $('.order-site-content').find('#' + id).addClass('visible');
-     }
- });
+        var id = $(this).attr('data-id');
+        if (id) {
+            
+            $('.order-site-content-inner:visible').removeClass('visible');
+            $('.order-site-content').find('#' + id).addClass('visible');
+            animationLetter.restart()
+        }
+    });
 
 
-$( window ).resize(function(BorderResize) {
-    var borderWidht = $(window).width();
-    $('.triangle-decore-l').css({'border-left-width': borderWidht });
-    $('.triangle-decore-r').css({'border-left-width': borderWidht });
-});
+    $( window ).resize(function(BorderResize) {
+        var borderWidht = $(window).width();
+        $('.triangle-decore-l').css({'border-left-width': borderWidht });
+        $('.triangle-decore-r').css({'border-left-width': borderWidht });
+    });
 
 
 $( window ).resize();

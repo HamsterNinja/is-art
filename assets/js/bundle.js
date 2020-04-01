@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0b3c20c33394de4fc992"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9e3fb0969fc267d22af1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1048,7 +1048,7 @@ try {
     }
 }
 
-anime.timeline({ loop: true }).add({
+var animationLetter = anime.timeline({ loop: true }).add({
     targets: '.fake_yasearch .letter',
     scale: [4, 1],
     opacity: [0, 1],
@@ -1077,6 +1077,7 @@ $(document).ready(function () {
 
             $('.order-site-content-inner:visible').removeClass('visible');
             $('.order-site-content').find('#' + id).addClass('visible');
+            animationLetter.restart();
         }
     });
 
