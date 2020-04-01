@@ -30,8 +30,10 @@
     transform: translate(0px, 0px);
 }
 .order-site-left {
+    max-width: 595px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 .order-site-right {
     margin-top: 0;
@@ -44,9 +46,7 @@
     height: auto;
     flex-direction: column-reverse;
 }
-.order-site-content-inner.visible {
-    height: auto;
-}
+
 .order-site-content-name {
     font-size: 24px;
 }
@@ -256,7 +256,50 @@ a.main-header-callback {
 .bottom-seo-content-title h2 {
     font-size: 30px;
 }
-
+.order-site-content {
+    position: relative;
+    width: auto;
+}
+.order-site-content-inner {
+    width: 100%;
+}
+.order-site-content-inner.visible {
+    height: auto;
+}
+.choose-button {
+    font-size: 9px;
+    padding: 12px 12px;
+}
+.order-site-left-name {
+    font-size: 24px;
+    margin-bottom: 15px
+}
+.order-site-left-text {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.order-site-content-info {
+    position: relative;
+    padding: 20px 10px 50px 10px;
+}
+.order-site-content-link {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.order-site-content-text {
+    font-size: 12px;
+}
+.order-site-content-buttons {
+    bottom: 15px;
+    width: 290px;
+}
+.order-site-link a {
+    font-size: 14px;
+    padding-right: 30px;
+}
+.order-site-with-bonus {
+    padding: 20px 0;
+}
 }
 @media(max-width: 540px){
 .under-footer-link {
@@ -317,6 +360,31 @@ a.main-header-callback {
 .main-page-blog-title {
     font-size: 30px;
 }
+.fake_yasearch {
+    font-size: 12px;
+}
+.seo-advantages {
+    padding: 60px 0 25px;
+}
+.our-clients {
+    padding: 25px 0 25px;
+}
+.bottom-seo-content {
+    padding: 25px 0 25px;
+}
+.our-clients-inner {
+    grid-gap: 40px;
+}
+.bottom-seo-content-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.our-team {
+    padding: 20px 0 150px;
+}
+.block_development {
+    padding-top: 35px;
+}
 }
 @media(max-width: 480px){
 .block-with-video {
@@ -361,5 +429,8 @@ a.main-header-phone {
 a.main-header-email {
     font-size: 10px;
     margin-left: 10px;
+}
+.seo-advantages-item-text {
+    width: 210px;
 }
 }

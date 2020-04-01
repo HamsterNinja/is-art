@@ -164,9 +164,9 @@ img {
     margin: 0;
     
 }
-.block_development-inner,
-.our-works-inner{
+.block_development-inner, .our-works-inner {
     overflow: hidden;
+    position: relative;
 }
 .development-swiper,
 .our-works-swiper {
