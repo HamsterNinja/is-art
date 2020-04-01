@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "68b5eb4ac9d1ea4e7d88"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0b3c20c33394de4fc992"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1022,8 +1022,31 @@ function animate(_ref) {
         }
     });
 }
-var textWrapper = document.querySelector('.fake_yasearch');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelectorAll('.fake_yasearch');
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+    for (var _iterator = textWrapper[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var item = _step.value;
+
+        item.innerHTML = item.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    }
+} catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+        }
+    } finally {
+        if (_didIteratorError) {
+            throw _iteratorError;
+        }
+    }
+}
 
 anime.timeline({ loop: true }).add({
     targets: '.fake_yasearch .letter',
