@@ -78,8 +78,10 @@ function animate({timing, draw, duration}) {
 
   });
 }
-var textWrapper = document.querySelector('.fake_yasearch');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelectorAll('.fake_yasearch');
+for (let item of textWrapper) {
+    item.innerHTML = item.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+}
 
 anime.timeline({loop: true})
   .add({
@@ -90,7 +92,8 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     duration: 950,
     delay: (el, i) => 70*i
-  }).add({
+  })
+  .add({
     targets: '.fake_yasearch',
     opacity: 0,
     duration: 1000,
