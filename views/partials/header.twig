@@ -3,7 +3,7 @@
 
 <head>
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -43,7 +43,7 @@
                 <button class="btn-hamburger btn-hamburger-1 js_hamburger"><span></span></button>
      			<div class="main-header-bottom-menu">
      				<ul>
-     					<li><a href="">Услуги и цены</a></li>
+     					<li class="click_drop"><a href="javascript:void">Услуги и цены</a></li>
      					<li><a href="">Акции</a></li>
      					<li><a href="">О компании</a></li>
      					<li><a href="">Кейсы</a></li>
@@ -58,7 +58,6 @@
      			</div>
      			<div class="main-header-sub-menu">
      				<div class="main-header-sub-menu-grid">
-     				{% for item in 0..7 %}
      				<div class="sub-menu-item">
      					<div class="sub-menu-item-name">Создание сайтов</div>
      					<ul>
@@ -70,9 +69,8 @@
      						<li><a href="">Дешевый сайт</a></li>
      					</ul>
      				</div>
-					{% endfor %}
 					</div>
-					<a href="" class="sub-menu-open-all">Открыть все услуги</a>
+					<!-- <a href="" class="sub-menu-open-all">Открыть все услуги</a> -->
      			</div>
      		</div>
      	</div>

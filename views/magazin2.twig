@@ -1,0 +1,172 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+	<div class="block-with-video" style="background-image: url(./assets/images/banner_big.jpg);">
+		<div class="main-banner-info shop">
+			<div class="main-banner-shop-title">Вакцин<span class="red_text">Акция</span></div>
+			<div class="main-banner-shop-text">Интернет магазин за <span class="green_text">2 дня</span></div>	
+		</div>
+	</div>
+	<div class="under-banner-block">
+		<div class="under-banner-block-content">
+		<div class="under-banner-block-left">
+			<h1>Интернет магазин за 29 900 РУБ</h1>
+			<p>Перенеси свой бизнес в интернет за 2 дня</p>
+			<p>Мы в этом поможем</p>
+		</div>
+		<img src="./assets/images/man.png" alt="">
+		</div>
+	</div>
+	<div class="shop-gallery">
+		<div class="shop-gallery-title">Выберите магазин</div>
+		<div class="shop-gallery-slick">
+			{% for item in 0..3 %}
+			<div class="shop-gallery-slick-content">
+				<div class="shop-gallery-slick-content-img"><img src="./assets/images/galshop.jpg" alt=""></div>
+				<div class="shop-gallery-slick-content-info">
+					<a data-fancybox="" class="shop-gallery-link" href="">Посмотреть</a>
+					<a class="shop-gallery-link" href="">Заказать</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="your-choice">
+		<div class="container-2">
+			<div class="your-choice-title">Что вы выберете</div>
+			<div class="your-choice-content">
+				<div class="your-choice-item true">
+					<img src="./assets/images/right.png" alt="">
+					<div class="your-choice-item-name">Сделать рабочий сайт и быстро перенести бизнес в интернет</div>
+					<div class="your-choice-item-list">
+						<ul>
+							<li>Вы работаете даже в ПАНДЕМИЮ</li>
+							<li>Держите бизнес на плаву</li>
+							<li>Вырастает Ваша узнаваемость - растут продажи</li>
+							<li>Не тратите средства на аренду</li>
+							<li>Идёте в ногу со временем – бизнес ПРОЦВЕТАЕТ</li>
+							<li>Сайт с мобильной версией!</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="your-choice-item false">
+					<img src="./assets/images/false2.png" alt="">
+					<div class="your-choice-item-name">Оставить всё как есть, Нести потери?</div>
+					<div class="your-choice-item-list">
+						<ul>
+							<li>Отправить сотрудников на выходные за свой счет</li>
+							<li>Заморозить бизнес на время пандемии</li>
+							<li>Вернутся к тому, на чем все остановилось</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="save-business">
+		<div class="save-business-content">
+			<div class="save-business-title">Мы подготовили быстрое решение для всех</div>
+			<div class="save-business-text">Мы хотим чтобы бизнес в России не погиб и быстро перешел в интернет для этого мы подготовили сайты, готовые работать уже сейчас.</div>
+			<div class="save-business-phone">
+				<div class="save-business-phone-name">Если вы хотите сохранить свой бизнес, звоните:</div>
+				<a href="tel:8 800 201-55-27">8 800 201-55-27</a>
+			</div>
+		</div>
+	</div>
+	<div class="launched-sites">
+		<div class="container-2">
+			<div class="launched-sites-left">За время самоизоляции мы запустили:</div>
+			<div class="launched-sites-right">
+				<div class="advantages-item">
+					<div class="advantages-item-num">42</div>
+					<div class="advantages-item-text">Сайта</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-clients" data-aos="fade-up" style="background-color: #fff;">
+		<div class="container-2">
+			<div class="our-clients-title">С кем мы работали</div>
+			<div class="our-clients-inner">
+				<div class="our-clients-item"><img src="./assets/images/part1.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part2.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part3.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part4.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part5.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part6.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part7.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part8.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part9.png" alt=""></div>
+				<div class="our-clients-item"><img src="./assets/images/part10.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="shops-reviews">
+		<div class="shops-lend-title">Отзывы</div>
+		<div class="shops-reviews-content">
+			<div class="shops-reviews-slick">
+				{% for item in 0..2 %}	
+				<div class="reviews-slick-content">
+					<div class="reviews-slick-content-name">Денис Петров группа челси</div>
+					<div class="video-block youtube" data-embed="UTgijnMNr6s">
+        				<div class="play-button">
+            				<img src="./assets/images/play.png" alt="">
+        				</div> 
+    				</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="blue-info-block" style="padding: 65px 0 80px; max-width: 100%">
+		<div class="container-2">
+		<div class="industry-row" data-aos="fade-up" style="padding: 0">
+			<div class="blue-info-block-title">Не нашли подходящий сайт, мы поможем.<br>Выберите свою тематику</div>
+			<div class="industry-row-grid">
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr10.png" alt=""></i>
+						<p>Строительные материалы</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr14.png" alt=""></i>
+						<p>Магазин одежды и обуви</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr4.png" alt=""></i>
+						<p>Салон штор</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr16.png" alt=""></i>
+						<p>Мебельные салоны</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr13.png" alt=""></i>
+						<p>Детские товары</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr7.png" alt=""></i>
+						<p>Кафе и рестораны</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr8.png" alt=""></i>
+						<p>Магазин люстр и освещения</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr12.png" alt=""></i>
+						<p>Индустриальное производство</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr9.png" alt=""></i>
+						<p>Агентство недвижимости</p>
+					</a>
+					<a href="" class="industry-row-item">
+						<i class="industry-image"><img src="./assets/images/industr11.png" alt=""></i>
+						<p>Медицинские услуги и товары</p>
+					</a>
+			</div>
+		</div>
+	</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}
