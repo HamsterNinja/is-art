@@ -2,6 +2,13 @@
 .form-and-advantages {
     background-size: 100%;
 }
+.block-with-video {
+    padding-bottom: 46.5%;
+    height: 0;
+}
+.block-with-video iframe {
+    height: 118%;
+}
 }
 @media(max-width: 1450px){
 .block_development-inner .swiper-button-prev, .our-works-inner .swiper-button-prev {
@@ -17,6 +24,18 @@
 }
 .advantages-item-num {
     font-size: 80px;
+}
+.sertificates_block-inner .swiper-button-prev {
+    left: -80px;
+}
+.sertificates_block-inner .swiper-button-next {
+    right: -80px;
+}
+.our-team-inner .swiper-button-prev {
+    left: -15px;
+}
+.our-team-inner .swiper-button-next {
+    right: -15px;
 }
 }
 // @media(max-width: 1230px){
@@ -76,10 +95,17 @@
 }
 .main-header-bottom-menu{
     display: none;
+    order: 3;
+    width: 100%;
 }
-.main-header-bottom-menu ul {
-    margin-left: 40px;
+.main-header-sub-menu {
+    z-index: 1;
+    top: calc(53px + 10px);
+    left: 13px;
 }
+// .main-header-bottom-menu ul {
+//     margin-left: 40px;
+// }
 .main-header-bottom-menu ul li {
     display: block;
     vertical-align: middle;
@@ -261,6 +287,12 @@ img.gifts-img {
     margin-right: 40px;
     margin-top: 10px;
 }
+.sertificates_block-inner .swiper-button-prev,
+.sertificates_block-inner .swiper-button-next,
+.our-team-inner .swiper-button-prev,
+.our-team-inner .swiper-button-next{
+    display: none;
+}
 }
 @media(max-width: 767px){
     body,
@@ -401,6 +433,23 @@ img.gifts-img {
 .under-banner-block img {
     width: 300px;
 }
+.main-page-form{
+background: -webkit-linear-gradient(90deg, #64d485 0%, #95e282 99%);
+}
+.main-page-form-text {
+    color: #000;
+}
+.portfolio-items {
+    grid-template-columns: repeat(2, calc(50% - 8px));
+    grid-gap: 16px;
+}
+.portfolio-filter-checkbox {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.control-group {
+    display: block;
+}
 }
 @media(max-width: 720px){
 a.main-header-callback {
@@ -524,6 +573,24 @@ a.main-header-callback {
 }
 .shop-gallery-slick-content {
     padding: 0 12px;
+}
+.reviews-slick-content {
+    transition: 0.3s ease;
+    padding: 15px;
+    width: 100%;
+}
+.portfolio-title h1 {
+    font-size: 40px;
+}
+.portfolio-filter {
+    display: block;
+}
+.filter-item {
+    width: 100%;
+    margin-bottom: 14px;
+}
+.filter-item:last-child{
+    margin-bottom: 0;
 }
 }
 @media(max-width: 540px){
@@ -676,4 +743,29 @@ a.main-header-email {
 .seo-advantages-item-text {
     width: 210px;
 }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    i.logo-image img {
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    }
+    
+    .our-clients-inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .our-clients-item{
+        width: 192px;
+        margin: 20px;
+    }
+    .industry-row-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .industry-row-item{
+        width: 262px;
+        margin-bottom: 40px;
+    }
 }

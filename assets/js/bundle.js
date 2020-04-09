@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1c2bdde5cde23a2dde0e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ceb114ee6faa41d4ed11"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -915,6 +915,7 @@ module.exports = Html5Entities;
 var csAnimate = {
   init: function init() {
     var csAnimateElement = document.querySelectorAll('.cs-info_nonan');
+    var csAnimateElementArray = Array.prototype.slice.call(csAnimateElement);
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.intersectionRatio > 0) {
@@ -925,14 +926,13 @@ var csAnimate = {
         }
       });
     });
-    csAnimateElement.forEach(function (element) {
+    csAnimateElementArray.forEach(function (element) {
       observer.observe(element);
     });
   }
 };
 
 csAnimate.init();
-
 var swiper = new Swiper('.swiper-container.development-swiper', {
   slidesPerView: 'auto',
   loop: true,
@@ -957,8 +957,8 @@ var swiperteam = new Swiper('.swiper-container.our-team-swiper', {
   loop: true,
   spaceBetween: 50,
   navigation: {
-    nextEl: '.our-team-swiper .swiper-button-next',
-    prevEl: '.our-team-swiper .swiper-button-prev'
+    nextEl: '.our-team-inner .swiper-button-next',
+    prevEl: '.our-team-inner .swiper-button-prev'
   },
   breakpoints: {
     480: {
@@ -984,8 +984,8 @@ var swiperserts = new Swiper('.swiper-container.sertificates-swiper', {
   loop: true,
   spaceBetween: 35,
   navigation: {
-    nextEl: '.sertificates-swiper .swiper-button-next',
-    prevEl: '.sertificates-swiper .swiper-button-prev'
+    nextEl: '.sertificates_block-inner .swiper-button-next',
+    prevEl: '.sertificates_block-inner .swiper-button-prev'
   },
   breakpoints: {
     680: {
@@ -1066,6 +1066,44 @@ var animationLetter = anime.timeline({ loop: true }).add({
   delay: 500
 });
 
+if ($(".advantages-content").length) {
+
+  var animationStared = false;
+  var roundLogEl1 = document.querySelector('.advantages-item:nth-child(1) .advantages-item-num');
+  var roundLogEl2 = document.querySelector('.advantages-item:nth-child(2) .advantages-item-num');
+  var roundLogEl3 = document.querySelector('.advantages-item:nth-child(3) .advantages-item-num');
+  var roundLogEl4 = document.querySelector('.advantages-item:nth-child(4) .advantages-item-num');
+  $(window).scroll(function () {
+    if (animationStared) return;
+    if ($(window).scrollTop() + $(window).height() > $('.advantages-content').height() + $('.advantages-content').offset().top) {
+      anime({
+        targets: roundLogEl1,
+        innerHTML: [0, 392],
+        easing: 'linear',
+        round: 1 // Will round the animated value to 1 decimal
+      });
+      anime({
+        targets: roundLogEl2,
+        innerHTML: [0, 280],
+        easing: 'linear',
+        round: 1 // Will round the animated value to 1 decimal
+      });
+      anime({
+        targets: roundLogEl3,
+        innerHTML: [0, 128],
+        easing: 'linear',
+        round: 1 // Will round the animated value to 1 decimal
+      });
+      anime({
+        targets: roundLogEl4,
+        innerHTML: [0, 12],
+        easing: 'linear',
+        round: 1 // Will round the animated value to 1 decimal
+      });
+      animationStared = true;
+    }
+  });
+}
 $(document).ready(function () {
   $('.choose-button').click(function (event) {
     event.preventDefault();
@@ -1080,6 +1118,11 @@ $(document).ready(function () {
       $('.order-site-content').find('#' + id).addClass('visible');
       animationLetter.restart();
     }
+  });
+
+  $('.main-header-bottom .js_hamburger').click(function () {
+    $('.main-header-bottom-menu').slideToggle();
+    $(this).toggleClass('active');
   });
 
   function showNextSlide() {
@@ -1110,44 +1153,55 @@ $(document).ready(function () {
 
   $(window).resize();
 
-  $('.shops-reviews-slick').slick({
-    centerMode: true,
-    centerPadding: '470px',
-    slidesToShow: 1,
-    arrows: false,
-    responsive: [{
-      breakpoint: 1380,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '400px',
-        slidesToShow: 1
-      }
-    }, {
-      breakpoint: 1280,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '300px',
-        slidesToShow: 1
-      }
-    }, {
-      breakpoint: 767,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '100px',
-        slidesToShow: 1
-      }
-    }]
-  });
+  // $('.shops-reviews-slick').slick({
+  //   centerMode: true,
+  //   centerPadding: '470px',
+  //   slidesToShow: 1,
+  //   arrows: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1380,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '400px',
+  //         slidesToShow: 1
+  //       }
+  //     },{
+  //       breakpoint: 1280,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '300px',
+  //         slidesToShow: 1
+  //       }
+  //     },{
+  //       breakpoint: 767,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '100px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
 
   $('.shop-gallery-slick').slick({
     centerMode: true,
-    centerPadding: '470px',
-    slidesToShow: 1,
+    centerPadding: '250px',
+    slidesToShow: 2,
     arrows: false,
+    swipeToSlide: true,
     responsive: [{
+      breakpoint: 1600,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '470px',
+        slidesToShow: 1
+      }
+    }, {
       breakpoint: 1380,
       settings: {
         arrows: false,
@@ -1204,29 +1258,14 @@ $(document).ready(function () {
 
         iframe.setAttribute("frameborder", "0");
         iframe.setAttribute("allowfullscreen", "");
-        iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+        iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.parentNode.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
 
-        this.parentNode.innerHTML = "";
+        this.innerHTML = "";
         this.parentNode.appendChild(iframe);
       });
     };
   })();
 });
-
-var speed = 10;
-
-function goCounter() {
-  var timestamp = 42,
-      counter = Math.ceil(timestamp + speed),
-      interval = Math.floor(Math.random() * (4000 - 1000 + 10)) + 400;
-
-  $('.advantages-item-num').text(counter);
-  setTimeout(function () {
-    goCounter();
-  }, interval);
-}
-
-goCounter();
 
 /***/ }),
 /* 2 */

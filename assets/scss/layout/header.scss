@@ -6,6 +6,7 @@ header.main-header {
     z-index: 1;
     width: 100%;
     min-width: 1230px;
+    z-index: 3;
 }
 .main-header-top{
     padding: 20px 0 25px;
@@ -93,10 +94,14 @@ a.main-header-phone {
 	text-decoration: none;
 }
 a.main-header-callback {
-    color: #fff;
+    color: #6ccc58;
     font-size: 12px;
     font-weight: 700;
-    text-decoration: dashed;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+a.main-header-callback:hover{
+    color: #fff;
 }
 .main-header-top-item{}
 a.main-header-email {
@@ -141,7 +146,7 @@ a.main-header-email {
     margin-left: 25px;
     transition: 0.3s ease;
 }
-.main-header-top-item a:hover,
+.main-header-phone:hover,
 .main-header-bottom-menu ul li a:hover,
 a.main-header-bottom-link:hover {
     color: #6ccc58;
@@ -202,4 +207,87 @@ a.main-header-bottom-link:hover {
     font-size: 14px;
     color: #1aa74b;
     font-weight: 700;
+}
+.archive header.main-header,
+.page-template-page_contacts header.main-header,
+.single-portfolio header.main-header,
+.post-template-default header.main-header,
+.page-template-default header.main-header,
+.page-template-page_reviews header.main-header{
+    position: relative;
+    background-color: #000;
+}
+.archive header.main-header .main-header-kp-link a,
+.single-portfolio header.main-header .main-header-kp-link a,
+.page-template-page_contacts header.main-header .main-header-kp-link a,
+.post-template-default header.main-header .main-header-kp-link a,
+.page-template-default header.main-header .main-header-kp-link a,
+.page-template-page_reviews header.main-header .main-header-kp-link a {
+    font-size: 14px;
+    background-image: url(isart_new/assets/images/brif2.png);
+    color: #202020;
+}
+.archive header.main-header .main-header-top,
+.single-portfolio header.main-header .main-header-top,
+.page-template-page_contacts header.main-header .main-header-top,
+.post-template-default header.main-header .main-header-top,
+.page-template-default header.main-header .main-header-top,
+.page-template-page_reviews header.main-header .main-header-top{
+    background-color: #fff;
+}
+.archive header.main-header i.logo-image img,
+.single-portfolio header.main-header i.logo-image img,
+.page-template-page_contacts header.main-header i.logo-image img,
+.post-template-default header.main-header i.logo-image img,
+.page-template-default header.main-header i.logo-image img,
+.page-template-page_reviews header.main-header i.logo-image img{
+    filter: none;
+}
+.archive header.main-header h3.logo-text,
+.single-portfolio header.main-header h3.logo-text,
+.page-template-page_contacts header.main-header h3.logo-text,
+.post-template-default header.main-header h3.logo-text,
+.page-template-default header.main-header h3.logo-text,
+.page-template-page_reviews header.main-header h3.logo-text{
+    color: #6a6a6a;
+}
+.archive header.main-header .main-header-top-item,
+.single-portfolio header.main-header .main-header-top-item,
+.page-template-page_contacts header.main-header .main-header-top-item,
+.post-template-default header.main-header .main-header-top-item,
+.page-template-default header.main-header .main-header-top-item,
+.page-template-page_reviews header.main-header .main-header-top-item {
+    background-image: url(isart_new/assets/images/phone_b.png);
+}
+.archive header.main-header a.main-header-phone,
+.page-template-page_contacts header.main-header a.main-header-phone,
+.single-portfolio header.main-header a.main-header-phone,
+.post-template-default header.main-header a.main-header-phone,
+.page-template-default header.main-header a.main-header-phone,
+.page-template-page_reviews header.main-header a.main-header-phone{
+    color: #000;
+}
+.archive header.main-header a.main-header-callback,
+.single-portfolio header.main-header a.main-header-callback,
+.page-template-page_contacts header.main-header a.main-header-callback,
+.post-template-default header.main-header a.main-header-callback,
+.page-template-default header.main-header a.main-header-callback,
+.page-template-page_reviews header.main-header a.main-header-callback{
+    color: #dd2525;
+}
+.archive header.main-header a.main-header-callback:hover,
+.single-portfolio header.main-header a.main-header-callback:hover,
+.page-template-page_contacts header.main-header a.main-header-callback:hover,
+.post-template-default header.main-header a.main-header-callback:hover,
+.page-template-default header.main-header a.main-header-callback:hover,
+.page-template-page_reviews header.main-header a.main-header-callback:hover{
+    color: #6ccc58;
+}
+.archive header.main-header a.main-header-email,
+.single-portfolio header.main-header a.main-header-email,
+.page-template-page_contacts header.main-header a.main-header-email,
+.post-template-default header.main-header a.main-header-email,
+.page-template-default header.main-header a.main-header-email,
+.page-template-page_reviews header.main-header a.main-header-email{
+    color: #000;
 }
