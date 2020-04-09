@@ -2834,11 +2834,15 @@ label.filter-name{
     z-index: 1;
     position: absolute;
     bottom: 25px;
+    left: 10px;
+    right: 10px;
 }
 .our-works-item-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 217px;
+    margin: 0 auto;
 }
 .portfolio-items .our-works-item-link {
     margin-right: 7px;
