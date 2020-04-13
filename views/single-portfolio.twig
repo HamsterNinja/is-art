@@ -6,78 +6,40 @@
 			<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="https://is-art.ru/" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></span><span class="breadcrumbs__separator"> / </span><span class="breadcrumbs__current">Наши работы</span></div>
 
 			<div class="portfolio-title"><h1>Сайт Дром-Сервис</h1></div>
-			<div class="portfolio-under-title">Интернет маркетинг - увеличение посещаемости сайтов, повышение позиций в поисковой выдаче, узнаваемость бренда и работа с репутацией</div>
-			<div class="portfolio-filter">
-				<div class="portfolio-filter-checkbox">
-					<label class="filter-name" for="">Категории</label>
-					<div class="control-group">
-					    <label class="control control-checkbox">
-					        SEO продвижение
-					            <input type="checkbox" checked="checked" />
-					        <div class="control_indicator"></div>
-					    </label>
-					    <label class="control control-checkbox">
-					        Контекстная реклама
-					            <input type="checkbox" checked="checked" />
-					        <div class="control_indicator"></div>
-					    </label>
-					    <label class="control control-checkbox">
-					        SMM - соц сети и таргет
-					            <input type="checkbox" checked="checked" />
-					        <div class="control_indicator"></div>
-					    </label>
-	    			</div>
-    			</div>
-				<div class="filter-item">
-					<label class="filter-name" for="">Избранные</label>
-					<button class="favorite-filter"><img src="./assets/images/heart_b.png" alt=""></button>
+			<div class="portfolio-task">
+				<div class="portfolio-task-name">Задача:</div>
+				<div class="portfolio-task-content">
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+				</div>
+			</div>
+			<div class="portfolio-filter single-portfolio-filter">
+				<div class="single-portfolio-filter-item">
+					<div class="single-portfolio-filter-item-name">Категории сайта</div>
+					<div class="site-category-link"><a href="">Интернет магазин</a></div>
+					<div class="site-category-link"><a href="">Мебель</a></div>
+				</div>
+				<div class="single-portfolio-filter-item">
+					<div class="single-portfolio-filter-item-name">CMS</div>
+					<div class="cms-name">WordPress</div>
+				</div>
+				<div class="single-portfolio-filter-item">
+					<div class="single-portfolio-filter-item-name">Посмотреть сайт</div>
+					<a href="" class="work-site-link">https://drom-service.ru/</a>
+				</div>
+				<div class="single-portfolio-filter-item">
+					<div class="single-portfolio-filter-item-name">Над сайтом работали</div>
+					<div class="portfolio-devs">
+						<div class="dev-item"><img src="./assets/images/dev.jpg" alt=""></div>
+						<div class="dev-item"><img src="./assets/images/dev.jpg" alt=""></div>
+						<div class="dev-item"><img src="./assets/images/dev.jpg" alt=""></div>
+						<div class="dev-item"><img src="./assets/images/dev.jpg" alt=""></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="category-portfolio-content">
-		<div class="container-2">
-			<div class="portfolio-items">
-				{% for item in 0..4 %}
-				<a href="" class="our-works-item" style="background-image: url(./assets/images/work.jpg);">
-					<div class="our-works-item-info">
-						<div class="our-works-item-name">Сайт фотографа</div>
-						<div class="our-works-item-links">
-							<div class="our-works-item-link">Подробнее</div>
-							<button class="favorite-btn"><img src="./assets/images/heart_w.png" alt=""></button>
-						</div>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
-			<div class="pagintation_block">
-                
-				<nav class="navigation pagination" role="navigation">
-					<h2 class="screen-reader-text"> </h2>
-					<div class="nav-links">
-						<span aria-current="page" class="page-numbers current"><span>1</span></span>
-						<a class="page-numbers" href="https://is-art.ru/category/blog/page/2/"><span>2</span></a>
-						<a class="page-numbers" href="https://is-art.ru/category/blog/page/3/"><span>3</span></a>
-						<a class="page-numbers" href="https://is-art.ru/category/blog/page/4/"><span>4</span></a>
-					</div>
-				</nav>            
-			</div>
-		</div>
-	</div>
-	<div class="gifts-numbers_block">
-		<img class="gifts-img" src="https://is-art.ru/wp-content/themes/is-art/isart_new/assets/images/gift.png" alt="">
-		<div class="gifts-info">
-			<div class="gifts-info-title">Мы каждый день дарим подарки</div>
-			<div class="gifts-info-text">Все любят получать подарки, а мы любим дарить 
-подарки! Каждый день мы дарим нашим клиентам
-SEO продвижение, настройку рекламы и многое другое. 
-Позвони и получи гарантированный подарок</div>
-		</div>
-		<div class="gifts-numbers">
-			<div class="gifts-numbers-name">Позвони сейчас</div>
-			<a href="tel:+7 (800) 201-55-27">+7 (800) 201-55-27</a>
-			<a href="tel:+7 (991) 312-09-06">+7 (991) 312-09-06</a>
-		</div>
+	<div class="single-portfolio-content">
+		<img src="./assets/images/maket.jpg" alt="">
 	</div>
 	</div>
 </main>

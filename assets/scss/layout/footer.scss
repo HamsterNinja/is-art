@@ -15,6 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 .footer-logo .logo-image{
 	margin-right: 15px;
@@ -137,4 +138,20 @@
 .official-partners a{
 	display: inline-block;
 	margin-left: 50px;
+}
+
+.under-footer .footer-socials {
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+.under-footer .footer-left-links {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.under-footer .copyright{
+    margin-right: 40px;
+}
+.under-footer .footer-left-links a {
+    margin-right: 20px;
 }

@@ -592,6 +592,9 @@ a.main-header-callback {
 .filter-item:last-child{
     margin-bottom: 0;
 }
+.our-works-item-name {
+    font-size: 15px;
+}
 }
 @media(max-width: 540px){
 .under-footer-link {
@@ -609,11 +612,7 @@ a.main-header-callback {
     margin-left: 0;
 }
 .main-footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
+    grid-template-columns: 230px calc(100% - 255px);
 }
 .main-page-form {
     padding: 15px 15px 25px 25px;
@@ -729,7 +728,7 @@ a.main-header-callback {
 }
 .main-header-top-item {
     width: 100%;
-    background: none;
+    background: none!important;
     padding-left: 0px;
 }
 a.main-header-phone {
