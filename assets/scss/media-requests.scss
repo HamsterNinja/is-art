@@ -293,6 +293,9 @@ img.gifts-img {
 .our-team-inner .swiper-button-next{
     display: none;
 }
+.see-also-list ul {
+    column-count: 2;
+}
 }
 @media(max-width: 767px){
     body,
@@ -693,7 +696,9 @@ a.main-header-callback {
 .under-banner-block-content {
     padding: 15px 100px 40px 25px;
 }
-
+.see-also-list ul {
+    column-count: 1;
+}
 }
 @media(max-width: 480px){
 .block-with-video {

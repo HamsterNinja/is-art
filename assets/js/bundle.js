@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ceb114ee6faa41d4ed11"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "eb074c0593eef4b158db"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1117,6 +1117,18 @@ $(document).ready(function () {
       $('.order-site-content-inner:visible').removeClass('visible');
       $('.order-site-content').find('#' + id).addClass('visible');
       animationLetter.restart();
+    }
+  });
+
+  $('.choice-site-button').click(function (event) {
+    event.preventDefault();
+    $('.choice-site-button').removeClass('active');
+    $(this).addClass('active');
+    var id = $(this).attr('data-id');
+    if (id) {
+
+      $('.main-column-sites-inner:visible').removeClass('visible');
+      $('.main-column').find('#' + id).addClass('visible');
     }
   });
 

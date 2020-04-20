@@ -1240,6 +1240,7 @@ a.our-works-item:hover .our-works-item-link{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 30px;
+    align-items: center;
 }
 .block-long-seo-content:nth-child(2n) {
     -webkit-box-orient: horizontal;
@@ -1256,14 +1257,13 @@ a.our-works-item:hover .our-works-item-link{
     background-image: url(../images/dots.png);
     background-repeat: no-repeat;
     background-position: 0px 1px;
-    padding: 25px 0px 25px 45px;
+    padding: 0px 0px 25px 45px;
     -webkit-transform: translate(-45px, 0px);
-        -ms-transform: translate(-45px, 0px);
-            transform: translate(-45px, 0px);
+    transform: translate(-45px, 0px);
 }
 .block-long-seo-content:nth-child(2n) .seo-content-img {
     background-position: 93% 1px;
-    padding: 25px 59px 25px 0px;
+    padding: 0px 59px 25px 0px;
     -webkit-transform: translate(59px, 0px);
         -ms-transform: translate(59px, 0px);
             transform: translate(59px, 0px);
@@ -2033,7 +2033,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fe20b', end
     margin: 0;
 }
 
-.left-column ul li a {
+.left-column ul li a,
+.choice-site-button {
     display: block;
     font-size: 16px;
     font-weight: 600;
@@ -2043,16 +2044,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fe20b', end
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
+    cursor: pointer;
 }
-.left-column ul li a:hover {
+.left-column ul li a:hover,
+.choice-site-button:hover {
     background-color: #f6f6f6;
 }
-.left-column ul li.active a{
+.left-column ul li.active a,
+.choice-site-button.active{
     background-color: #fff;
 }
 .main-column{
     background-color: #fff;
     padding: 25px 15px 45px 25px;
+}
+
+.main-column-sites-inner {
+    position: relative;
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.main-column-sites-inner.visible {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
 }
 .main-column-title{
     margin-bottom: 25px;
@@ -2670,10 +2687,27 @@ color: rgb(20, 178, 14);
     border: 1px solid #a0a0a0;
     color: #959595;
 }
-.shop-gallery-link:last-child{
-    border: 1px solid #000;
+.shop-gallery-link:last-child {
+    text-align: center;
+    background-image: url(../images/submit-form.png);
+    background: url(../images/inshad.png),url(../images/submit-form.png),linear-gradient(180deg, #f98c3f 0%, #f98c3f 5%, #fe562f 10%, #fe562f 90%, #f98c3f 95%, #f98c3f 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 1px, 32px 50%, 0 0;
+    font-size: 14px;
     color: #fff;
-    background-color: #000;
+    font-weight: 700;
+    border: aliceblue;
+    padding: 13px 0 13px 10px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    background-color: #fe522e;
+    box-shadow: 0px 2px 29px 0px rgba(157,38,13,0.75);
+}
+.shop-gallery-link:last-child:hover{
+    box-shadow: 0px 2px 0 0px rgba(157,38,13,0.75);
 }
 .reviews-slick-content.slick-current {
     -webkit-transform: scale(1);
@@ -3058,6 +3092,35 @@ button.favorite-filter.favorited {
     height: 100%;
     object-fit: cover;
     object-position: 50%;
+}
+
+.see-also_block {
+    background-color: #f4f4f4;
+    padding: 45px 0 55px;
+}
+.see-also-title{
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+.see-also-list{
+    
+}
+.see-also-list ul {
+    padding: 0;
+    margin: 0;
+    column-count: 3;
+    list-style: none;
+}
+.see-also-list ul li{
+    margin-bottom: 12px;
+}
+.see-also-list ul li a{
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 @import 'pages/home';
 @import 'components/buttons';

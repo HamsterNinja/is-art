@@ -182,6 +182,18 @@ $(document).ready(function() {
         }
     });
 
+     $('.choice-site-button').click(function (event) {
+        event.preventDefault();
+        $('.choice-site-button').removeClass('active');
+        $(this).addClass('active');
+        var id = $(this).attr('data-id');
+        if (id) {
+            
+            $('.main-column-sites-inner:visible').removeClass('visible');
+            $('.main-column').find('#' + id).addClass('visible');
+        }
+    });
+
 $('.main-header-bottom .js_hamburger').click(function() {
         $('.main-header-bottom-menu').slideToggle();
         $(this).toggleClass('active');
